@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToPlays-Submit</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="estiloHeader">
+        <div class="contenedorLogo">
+            <img src="../assets/logo.png" alt="Logo temporal" class="logo">
+            <h1 class="fuenteTitulo animacionTitulo">ToPlays</h1>
+        </div>
+        <nav>
+            <ul class="navegacionHeader fuenteTexto">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./top_5_beatport.html">Top 5 Beatport</a></li>
+                <li><a href="./top_5_traxsource.html">Top 5 Traxsource</a></li>
+                <li><a href="./listeners.html">Top 5 Oyentes</a></li>
+                <li><a href="./submit.html">Postular Canción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="fondoContenido estiloMain margenArr margenAba fuenteTexto">
+        <h2>Comparti tu musica con nosotros!</h2>
+        <p>Si queres postular aguna canción para que aparezca en el top 5 de nuestros oyentes completa este formulario y nuestro equipo de curadores va a evaluar tu cancion. El top 5 se renueva semanalmente.</p>
+        
+        <form action="#" method="get" enctype="text/plain" class="margenIzq">
+            <fieldset class="fieldset">
+                <div>
+                    <label for="nombre_y_apellido">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre_y_apellido" required>
+                </div>
+                <div>
+                    <label for="alias_de_productor">Alias</label>
+                    <input type="text" name="alias" id="alias_de_productor" required class="posAlias">
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" required class="posCorreo">
+                </div>
+                <div>
+                    <label for="parrafo_de_presentacion">Presentación</label>
+                    <textarea name="parrafo_de_presentacion" id="parrafo_de_presentacion" cols="30" rows="7"></textarea>
+                </div>
+                <div>
+                    <label for="enlace">Link de la cancion</label>
+                    <input type="url" name="enlace" id="enlace" required placeholder="Link a Soundcloud">
+                </div>
+                <div>
+                    <button type="reset" class="btn">Limpiar</button>
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+    
+            </fieldset>
+        </form>
+    </main>
+    <section class="fondoContenido estiloMain margenArr margenAba">
+
+    </section>
+    <footer class="estiloFooter fuenteTexto">
+        <ul class="navegacionFooter">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./top_5_beatport.html">Top 5 Beatport</a></li>
+            <li><a href="./top_5_traxsource.html">Top 5 Traxsource</a></li>
+            <li><a href="./listeners.html">Top 5 Oyentes</a></li>
+            <li><a href="./submit.html">Postular Canción</a></li>
+        </ul>
+        <img src="../assets/logo.png" alt="Logo temporal" class="logoFooter">
+    </footer>
+</body>
+</html>
