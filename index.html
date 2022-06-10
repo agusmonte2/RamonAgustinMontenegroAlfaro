@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +18,22 @@
             <h1 class="fuenteTitulo animacionTitulo">ToPlays</h1>
         </div>
         <nav>
-            <ul>
-                <li><a href="./index.html" class="fuenteTexto transBotones">Inicio</a></li>
-                <li><a href="./sitios/top_5_beatport.html" class="fuenteTexto transBotones">Top 5 Beatport</a></li>
-                <li><a href="./sitios/top_5_traxsource.html" class="fuenteTexto transBotones">Top 5 Traxsource</a></li>
-                <li><a href="./sitios/listeners.html" class="fuenteTexto transBotones">Top 5 Oyentes</a></li>
-                <li><a href="./sitios/submit.html" class="fuenteTexto transBotones">Postular canción</a></li>
-            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tops</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./sitios/top_5_beatport.html">Top 5 Beatport</a></li>
+                    <li><a class="dropdown-item" href="./sitios/top_5_traxsource.html">Top 5 Traxsource</a></li>
+                    <li><a class="dropdown-item" href="./sitios/listeners.html">Top 5 Oyentes</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./sitios/submit.html">Postular canción</a>
+                </li>
+              </ul>
         </nav>
     </header>
     <main class="fuenteTexto fondoContenido margenArr margenAba mainOrden">
@@ -42,21 +52,33 @@
         </div>
     </main>
     <section class="fondoContenido margenArr margenAba">
+        <div>
+            
+        </div>
         <div class="musicaInicio">
             <h2 class="fuenteTexto">Un poco de musica del editor</h2>
             <iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;feed=%2FDjAgusMontenegro%2Fprogressive-vibes-7%2F" frameborder="0" class="musicaInicio"></iframe>
         </div>
     </section>
     <footer>
-        <ul class="navegacionFooter">
-            <li><a href="./index.html" class="fuenteTexto transBotones">Inicio</a></li>
-            <li><a href="./sitios/top_5_beatport.html" class="fuenteTexto transBotones">Top 5 Beatport</a></li>
-            <li><a href="./sitios/top_5_traxsource.html" class="fuenteTexto transBotones">Top 5 Traxsource</a></li>
-            <li><a href="./sitios/listeners.html" class="fuenteTexto transBotones">Top 5 Oyentes</a></li>
-            </html>
-            <li><a href="./sitios/submit.html" class="fuenteTexto transBotones">Postular canción</a>
+        <ul class="nav">
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="./sitios/top_5_beatport.html">Top 5 Beatport</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="./sitios/top_5_traxsource.html">Top 5 Traxsource</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="./sitios/listeners.html">Top 5 Oyentes</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+                <a class="nav-link" href="./sitios/submit.html">Postular canción</a>
             </li>
         </ul>
         <img src="./assets/logo.png" alt="Logo temporal" class="logo">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

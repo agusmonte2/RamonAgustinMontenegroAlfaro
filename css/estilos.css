@@ -41,11 +41,9 @@ header nav ul li{
     margin: 0.2rem;
 }
 
-footer ul li{
-    display: inline;
-}
 
 footer ul li{
+    display: inline;
     background-color: rgb(89, 177, 177);
     border: none;
     border-radius: 0.3rem;
@@ -224,11 +222,7 @@ section{
 
 .fieldset{
     background-color: rgba(92, 113, 120, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-content: center; 
     border: 0rem;
-    margin-right: 45rem;
 }
 
 .musicaInicio{
