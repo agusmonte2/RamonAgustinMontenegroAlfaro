@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +18,22 @@
             <h1 class="fuenteTitulo animacionTitulo">ToPlays</h1>
         </div>
         <nav>
-            <ul class="navegacionHeader fuenteTexto">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./top_5_beatport.html">Top 5 Beatport</a></li>
-                <li><a href="./top_5_traxsource.html">Top 5 Traxsource</a></li>
-                <li><a href="./listeners.html">Top 5 Oyentes</a></li>
-                <li><a href="./submit.html">Postular Canción</a></li>
-            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tops</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="top_5_beatport.html">Top 5 Beatport</a></li>
+                    <li><a class="dropdown-item" href="top_5_traxsource.html">Top 5 Traxsource</a></li>
+                    <li><a class="dropdown-item" href="listeners.html">Top 5 Oyentes</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="submit.html">Postular canción</a>
+                </li>
+              </ul>
         </nav>
     </header>
     <main class="fondoContenido estiloMain margenArr margenAba fuenteTexto">
@@ -61,14 +71,25 @@
 
     </section>
     <footer class="estiloFooter fuenteTexto">
-        <ul class="navegacionFooter">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./top_5_beatport.html">Top 5 Beatport</a></li>
-            <li><a href="./top_5_traxsource.html">Top 5 Traxsource</a></li>
-            <li><a href="./listeners.html">Top 5 Oyentes</a></li>
-            <li><a href="./submit.html">Postular Canción</a></li>
+        <ul class="nav">
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="top_5_beatport.html">Top 5 Beatport</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="top_5_traxsource.html">Top 5 Traxsource</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="listeners.html">Top 5 Oyentes</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+                <a class="nav-link" href="submit.html">Postular canción</a>
+            </li>
         </ul>
         <img src="../assets/logo.png" alt="Logo temporal" class="logoFooter">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
