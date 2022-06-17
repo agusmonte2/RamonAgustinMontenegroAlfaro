@@ -1,0 +1,55 @@
+/*Grid Tops*/
+#gridTops{
+    display: grid;
+    grid-template-areas: 
+    "top1 top1"
+    "top2 top3"
+    "top4 top5";
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+}
+
+.top1{
+    grid-area: top1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+
+.top2{
+    grid-area: top2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.421);
+
+
+}
+
+.top3{
+    grid-area: top3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.421);
+
+
+}
+
+.top4{
+    grid-area: top4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+
+.top5{
+    grid-area: top5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.421);
+}

@@ -1,0 +1,21 @@
+/*Grids pagina general*/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+    grid-template-rows: 65px auto auto 65px;
+    grid-template-columns: 50% 50%;
+    
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+

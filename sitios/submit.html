@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToPlays-Submit</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -17,61 +18,85 @@
             <h1 class="fuenteTitulo animacionTitulo">ToPlays</h1>
         </div>
         <nav>
-            <ul class="navegacionHeader fuenteTexto">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./top_5_beatport.html">Top 5 Beatport</a></li>
-                <li><a href="./top_5_traxsource.html">Top 5 Traxsource</a></li>
-                <li><a href="./listeners.html">Top 5 Oyentes</a></li>
-                <li><a href="./submit.html">Postular Canción</a></li>
-            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tops</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="top_5_beatport.html">Top 5 Beatport</a></li>
+                    <li><a class="dropdown-item" href="top_5_traxsource.html">Top 5 Traxsource</a></li>
+                    <li><a class="dropdown-item" href="listeners.html">Top 5 Oyentes</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="submit.html">Postular canción</a>
+                </li>
+              </ul>
         </nav>
     </header>
     <main class="fondoContenido estiloMain margenArr margenAba fuenteTexto">
         <h2>Comparti tu musica con nosotros!</h2>
-        <p>Si queres postular aguna canción para que aparezca en el top 5 de nuestros oyentes completa este formulario y nuestro equipo de curadores va a evaluar tu cancion. El top 5 se renueva semanalmente.</p>
+        <div class="container">Si queres postular aguna canción para que aparezca en el top 5 de nuestros oyentes completa este formulario y nuestro equipo de curadores va a evaluar tu cancion. El top 5 se renueva semanalmente.</div>
         
-        <form action="#" method="get" enctype="text/plain" class="margenIzq">
-            <fieldset class="fieldset">
-                <div>
-                    <label for="nombre_y_apellido">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre_y_apellido" required>
+        <div class="container">
+            <div class="row d-flex flex-column align-items-center">
+              <div class="col-md-4 fieldset">
+                <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="nombreCandidato">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="col">
+                    <label for="apellidoCandidato">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="emailCandidato">Email</label>
+                  <input type="email" class="form-control" id="emailCandidato" aria-describedby="emailHelp" placeholder="Ingrese email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más.</small>
                 </div>
                 <div>
-                    <label for="alias_de_productor">Alias</label>
-                    <input type="text" name="alias" id="alias_de_productor" required class="posAlias">
+                  <label for="userMessage">Mansaje</label>
+                  <textarea name="userMessage" class="form-control" cols="30" rows="10" placeholder="Presentate en no mas de 7 lineas"></textarea>
                 </div>
-                <div>
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" name="email" id="email" required class="posCorreo">
+                <div class="d-flex flex-column">
+                    <label for="linkTrack">Link</label>
+                    <input type="url" name="linkTrack" class="form-control" placeholder="Link a Soundcloud">
                 </div>
-                <div>
-                    <label for="parrafo_de_presentacion">Presentación</label>
-                    <textarea name="parrafo_de_presentacion" id="parrafo_de_presentacion" cols="30" rows="7"></textarea>
-                </div>
-                <div>
-                    <label for="enlace">Link de la cancion</label>
-                    <input type="url" name="enlace" id="enlace" required placeholder="Link a Soundcloud">
-                </div>
-                <div>
-                    <button type="reset" class="btn">Limpiar</button>
-                    <button type="submit" class="btn">Enviar</button>
-                </div>
-    
-            </fieldset>
-        </form>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+        </div>
+
+       
     </main>
     <section class="fondoContenido estiloMain margenArr margenAba">
 
     </section>
     <footer class="estiloFooter fuenteTexto">
-        <ul class="navegacionFooter">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./top_5_beatport.html">Top 5 Beatport</a></li>
-            <li><a href="./top_5_traxsource.html">Top 5 Traxsource</a></li>
-            <li><a href="./listeners.html">Top 5 Oyentes</a></li>
-            <li><a href="./submit.html">Postular Canción</a></li>
+        <ul class="nav">
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="top_5_beatport.html">Top 5 Beatport</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="top_5_traxsource.html">Top 5 Traxsource</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+              <a class="nav-link" href="listeners.html">Top 5 Oyentes</a>
+            </li>
+            <li class="nav-item fuenteTexto transBotones">
+                <a class="nav-link" href="submit.html">Postular canción</a>
+            </li>
         </ul>
         <img src="../assets/logo.png" alt="Logo temporal" class="logoFooter">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
