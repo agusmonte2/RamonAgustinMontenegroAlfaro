@@ -154,6 +154,27 @@ footer ul li {
   flex-direction: row;
 }
 
+.displayRedes {
+  display: flex;
+}
+
+/* Maps, maps get, extend y mixins */
+body section div {
+  display: flex;
+  justify-content: center;
+}
+body section div li {
+  text-decoration: none;
+  background-color: rgb(89, 177, 177);
+  border-radius: 0.3rem;
+}
+
+.botonInstagram, .botonSound, .botonMix {
+  display: inline;
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+
 /*Media queries*/
 @media screen and (max-width: 1024px) {
   #grilla {

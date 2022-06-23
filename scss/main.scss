@@ -87,7 +87,6 @@ footer{
 }
 
 
-
 .fuenteTexto{
     font-family: 'Rubik', sans-serif;
 }
@@ -173,6 +172,51 @@ footer{
 .mainOrden{
     display: flex;
     flex-direction: row;
+}
+
+.displayRedes{
+    display: flex;
+}
+
+/* Maps, maps get, extend y mixins */
+$estilos: (
+    fondo: rgb(89, 177, 177),
+    radio: 0.3rem,
+    viñetas: inline,
+    margen: 0.8rem,
+    padding: 0.8rem
+    );
+
+body{
+    section{
+        div{
+            display: flex;
+            justify-content: center;
+            li{
+                text-decoration: none;
+                background-color: map-get($map: $estilos, $key: fondo);
+                border-radius: map-get($map: $estilos, $key: radio);
+            }
+        }
+    }
+}
+
+.botonInstagram{
+    display: map-get($map: $estilos, $key: viñetas);
+    margin: map-get($map: $estilos, $key: margen);
+    padding: map-get($map: $estilos, $key: padding);
+}
+
+.botonMix{
+    @extend .botonInstagram
+}
+
+.botonSound{
+    @extend .botonInstagram
+}
+
+@mixin aplicarBordes {
+    border: 1px solid black;
 }
 
 
@@ -299,4 +343,4 @@ body footer ul li:hover{
 }
 
 @import "./parciales/grids_global";
-@import "./parciales/grids_tops"
+@import "./parciales/grids_tops";
