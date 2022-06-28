@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +47,7 @@
         </div>
         <div>
             <h2>Enfoque</h2>
-            <p class="tamañoParrafos">Este sitio esta enfocado compartir y difundir las tendencias de la musica 
-            electrónica actual para lo cual nos valdremos de 3 secciones clave. Primero
+            <p class="tamañoParrafos">Este sitio esta enfocado en compartir y difundir las tendencias de la musica electrónica actual para lo cual nos valdremos de 3 secciones clave. Primero
             que nada presentaremos el top 5 de las 2 tiendas de musica electrónica más concurridas, <a href="https://www.beatport.com/" target="_blank">Beatport</a> y <a href="https://www.traxsource.com/" target="_blank">Traxsource</a>, y en segundo termino, tendremos una tercera seccion donde nos encargaremos de  traerles algunas canciones que nos envien nuestros oyentes.
             </p>
         </div>
@@ -58,14 +57,21 @@
             <h2 class="fuenteTexto">Sobre el editor</h2>
             <iframe width="50%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;feed=%2FDjAgusMontenegro%2Fprogressive-vibes-7%2F" frameborder="0" class="musicaInicio"></iframe>
         </div>
+        
         <div class="displayRedes">
-          <li class="botonInstagram"><a href="https://www.instagram.com/djagusmontenegro">Instagram</a></li>
-          <li class="botonMix"><a href="https://www.mixcloud.com/DjAgusMontenegro/">Mixcloud</a></li>
-          <li class="botonSound"><a href="https://soundcloud.com/djagusmontenegro">Soundcloud</a></li>
+          
+          <li class="botonInstagram"><svg fill="#0d6efd" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg><a target="_blank" href="https://www.instagram.com/djagusmontenegro">Instagram</a></li>
+          <li class="botonMix"><svg fill="#0d6efd" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M21.95 19.062c-.154 0-.31-.045-.445-.135-.369-.25-.465-.75-.225-1.11.738-1.094 1.125-2.381 1.125-3.719s-.387-2.625-1.125-3.721c-.249-.368-.145-.866.216-1.106.375-.249.87-.146 1.108.214.917 1.365 1.396 2.97 1.396 4.62 0 1.648-.479 3.254-1.396 4.619-.135.239-.39.359-.645.359l-.009-.021zM19.66 17.768c-.153 0-.308-.045-.445-.139-.369-.239-.463-.734-.215-1.094.489-.721.747-1.545.747-2.43 0-.855-.258-1.695-.747-2.431-.248-.36-.154-.854.215-1.095s.857-.15 1.106.225c.669.99 1.021 2.145 1.021 3.314 0 1.201-.352 2.34-1.021 3.315-.146.24-.406.36-.661.36v-.025zm-3.73-7.153c-.314-3.197-3.016-5.699-6.3-5.699-2.721 0-5.13 1.748-5.995 4.283C1.588 9.501 0 11.269 0 13.4c0 2.344 1.912 4.254 4.26 4.254h10.908c1.964 0 3.566-1.594 3.566-3.557 0-1.706-1.2-3.129-2.805-3.48v-.002zm-.762 5.446H4.263c-1.466 0-2.669-1.191-2.669-2.658 0-1.465 1.193-2.658 2.669-2.658.71 0 1.381.285 1.886.781.3.314.811.314 1.125 0 .3-.301.3-.811 0-1.125-.555-.542-1.231-.931-1.965-1.111.75-1.665 2.43-2.774 4.305-2.774 2.609 0 4.74 2.129 4.74 4.738 0 .512-.075 1.006-.24 1.486-.135.42.09.869.51 1.02.074.03.165.045.24.045.33 0 .645-.211.75-.54.105-.315.18-.63.225-.96.734.285 1.26 1.005 1.26 1.83 0 1.096-.885 1.979-1.965 1.979l.034-.053z"/></svg><a target="_blank" href="https://www.mixcloud.com/DjAgusMontenegro/">Mixcloud</a></li>
+          <li class="botonSound"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+            <g>
+              <path style="fill:#0d6efd;" d="M72.83,218.485h18.207V103.832c-6.828,1.93-12.982,5.435-18.207,10.041   C72.83,113.874,72.83,218.485,72.83,218.485z M36.415,140.921v77.436l1.174,0.127h17.033v-77.682H37.589   C37.589,140.803,36.415,140.921,36.415,140.921z M0,179.63c0,14.102,7.338,26.328,18.207,33.147V146.52   C7.338,153.329,0,165.556,0,179.63z M109.245,218.485h18.207v-109.6c-5.444-3.396-11.607-5.635-18.207-6.5V218.485z    M253.73,140.803h-10.242c0.519-3.168,0.847-6.382,0.847-9.705c0-32.182-25.245-58.264-56.388-58.264   c-16.896,0-31.954,7.775-42.287,19.955v125.695h108.07c20.747,0,37.589-17.388,37.589-38.855   C291.319,158.182,274.477,140.803,253.73,140.803z"/>
+            </svg><a target="_blank" href="https://soundcloud.com/djagusmontenegro">Soundcloud</a></li>
         </div>
+
+
     </section>
     <footer>
-        <ul class="nav">
+        <ul class="nav esconderFooter">
             <li class="nav-item fuenteTexto transBotones">
               <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
