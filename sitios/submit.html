@@ -38,47 +38,46 @@
               </ul>
         </nav>
     </header>
-    <main class="fondoContenido estiloMain margenArr margenAba fuenteTexto">
+    <main class="fondoContenido margenArr margenAba fuenteTexto posicionCont">
         <h2>Comparti tu musica con nosotros!</h2>
         <div class="container">Si queres postular aguna canción para que aparezca en el top 5 de nuestros oyentes completa este formulario y nuestro equipo de curadores va a evaluar tu cancion. El top 5 se renueva semanalmente.</div>
-        
-        <div class="container">
+        <!-- Formulario bootstrap -->
+        <div class="container ">
             <div class="row d-flex flex-column align-items-center">
               <div class="col-md-4 fieldset">
                 <form>
-                <div class="row">
-                  <div class="col">
-                    <label for="nombreCandidato">Nombre</label>
-                    <input type="text" class="form-control" placeholder="Nombre">
+                  <div class="row">
+                    <div class="col">
+                      <label for="nombreCandidato">Nombre</label>
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                      <label for="apellidoCandidato">Apellido</label>
+                      <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
                   </div>
-                  <div class="col">
-                    <label for="apellidoCandidato">Apellido</label>
-                    <input type="text" class="form-control" placeholder="Apellido">
+                  <div class="form-group">
+                    <label for="emailCandidato">Email</label>
+                    <input type="email" class="form-control" id="emailCandidato" aria-describedby="emailHelp" placeholder="Ingrese email">
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más.</small>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="emailCandidato">Email</label>
-                  <input type="email" class="form-control" id="emailCandidato" aria-describedby="emailHelp" placeholder="Ingrese email">
-                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más.</small>
-                </div>
-                <div>
-                  <label for="userMessage">Mansaje</label>
-                  <textarea name="userMessage" class="form-control" cols="30" rows="10" placeholder="Presentate en no mas de 7 lineas"></textarea>
-                </div>
-                <div class="d-flex flex-column">
+                  <div>
+                    <label for="userMessage">Mansaje</label>
+                    <textarea name="userMessage" class="form-control" cols="30" rows="10" placeholder="Presentate en no mas de 7 lineas"></textarea>
+                  </div>
+                  <div class="d-flex flex-column">
                     <label for="linkTrack">Link</label>
                     <input type="url" name="linkTrack" class="form-control" placeholder="Link a Soundcloud">
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
             </div>
-        </div>
+          </div>
 
        
     </main>
-    <section class="fondoContenido estiloMain margenArr margenAba">
-
-    </section>
+    <!-- footer -->
     <footer class="estiloFooter fuenteTexto">
         <ul class="nav esconderFooter">
             <li class="nav-item fuenteTexto transBotones">
@@ -99,6 +98,6 @@
         </ul>
         <img src="../assets/logo.png" alt="Logo temporal" class="logoFooter">
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
